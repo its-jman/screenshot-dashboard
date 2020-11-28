@@ -1,0 +1,16 @@
+.button {
+  border-radius: 100vw;
+  background-color: var(--blue-7);
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: auto;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  transition: background-color 0.3s ease-in-out;
+  padding: 16px 32px;
+}
+
+.button:hover {
+  background-color: var(--blue-9);
+}

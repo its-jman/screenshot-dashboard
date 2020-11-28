@@ -1,0 +1,55 @@
+.listContainer {
+  border-radius: 8px;
+  border: 1px solid var(--grey-4);
+  overflow: hidden;
+}
+
+.headerContainer {
+  background-color: var(--grey-2);
+  padding: 26px 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container:not(:first-child) > .headerContainer {
+  border-top: 1px solid var(--grey-3);
+}
+
+.icon {
+  color: var(--grey-5);
+  box-sizing: content-box;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.icon:hover {
+  color: var(--grey-7);
+}
+
+.arrow {
+  margin-right: 12px;
+}
+
+.more {
+  margin-left: 12px;
+}
+
+.rotated {
+  transform: rotate(90deg);
+}
+
+.itemText {
+  flex-grow: 1;
+}
+
+.itemText > h3 {
+  font-size: 25px;
+  color: var(--grey-8);
+}
+
+.itemText > span {
+  line-height: 0;
+  font-size: 18px;
+  color: var(--grey-5);
+}

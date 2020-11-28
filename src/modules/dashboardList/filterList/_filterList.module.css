@@ -1,0 +1,21 @@
+.filtersContainer {
+  width: 33%;
+  margin-left: 12px;
+  margin-top: -6px;
+}
+
+.itemText {
+  margin-bottom: 8px;
+}
+
+.itemText > h6 {
+  color: var(--grey-3);
+}
+
+.itemText > div {
+  margin-left: 16px;
+}
+
+.productName {
+  font-weight: 600;
+}

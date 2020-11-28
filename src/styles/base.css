@@ -1,0 +1,7 @@
+a {
+  color: var(--blue-5);
+}
+
+a:hover {
+  text-decoration: underline;
+}

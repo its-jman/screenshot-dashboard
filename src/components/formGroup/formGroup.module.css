@@ -1,0 +1,24 @@
+.container {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+
+.info {
+  grid-column: 1 / 4;
+}
+
+.name {
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.desc {
+  color: var(--grey-6);
+}
+
+.content {
+  grid-column: 5 / -1;
+}

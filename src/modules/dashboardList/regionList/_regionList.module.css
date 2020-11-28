@@ -1,0 +1,96 @@
+.container {
+  overflow: hidden;
+  border-top: 1px solid transparent;
+  transition-delay: 0.5s;
+}
+
+.container.open {
+  transition-delay: 0s;
+  border-top-color: var(--grey-2);
+}
+
+.innerContainer {
+  padding-left: 80px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.noRegions {
+  margin-left: 16px;
+}
+
+.regionListContainer {
+  position: relative;
+  padding-left: 12px;
+  padding-right: 20px;
+}
+
+.regionListContainer::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 85%;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-left: 1px solid var(--grey-3);
+}
+
+.regionContainer {
+  padding: 6px;
+  padding-left: 12px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+}
+
+.regionContainer:hover {
+  background-color: var(--grey-1);
+  border: 1px solid var(--grey-2);
+}
+
+.editRegion {
+  opacity: 0;
+  margin-left: 16px;
+  color: var(--grey-4);
+}
+
+.editRegion:hover {
+  color: var(--grey-6);
+}
+
+.regionContainer:hover .editRegion {
+  opacity: 1;
+}
+
+.regionName {
+  flex-grow: 1;
+}
+
+.regionBounds {
+  font-family: "Roboto Mono", monospace;
+  color: var(--grey-3);
+  font-weight: 300;
+}
+
+.regionBounds > span {
+  color: var(--grey-8);
+  font-weight: 400;
+}
+
+.addRegion {
+  font-family: "Roboto Mono", monospace;
+  font-style: italic;
+  color: var(--blue-4);
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  margin-left: 26px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.addRegion:hover {
+  text-decoration: underline;
+}
